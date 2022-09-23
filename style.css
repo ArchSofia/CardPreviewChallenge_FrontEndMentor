@@ -1,0 +1,196 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(113, 116, 123, 1);   
+}
+
+main {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+article {
+    display: flex;
+    /* border: 3px solid black; */
+    border-radius: 7px;
+    width:585px;
+    height:450px;
+    margin: 2rem;
+}
+
+#image {
+    background-image: url(/FEMentorChallenge_CardPreview/images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-size: 104%;
+    background-position: center;
+    flex-basis: 50%;  
+    /* border: 3px solid black;  */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card {
+    flex-basis: 50%;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height:410px;  
+}
+
+p:hover {
+    transform: scale(0.98);
+    
+}
+
+br {
+    display: none;
+}
+
+.font {
+    font-family:'Fraunces', serif;;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: rgba(31, 36, 42, 1);
+}
+
+.crossed {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration:line-through;
+    color: rgba(113, 116, 123, 1);
+}
+
+.greenFont {
+    color: rgba(61, 129, 104, 1);
+    font-family:'Fraunces', serif;;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 30px;
+}
+
+button {
+    background-color: rgba(61, 129, 104, 1);
+    color:hsl(0, 0%, 100%) ;
+    padding: 12px;
+    border-radius: 7px;
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border: 0cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color:rgba(26, 64, 49, 1);
+    transition-duration: 3ms; 
+}
+
+button img {
+    margin-right: 5px;
+}
+
+footer {
+    background-color: hsl(30, 38%, 92%);
+}
+
+@media (max-width: 650px){
+article {
+    flex-direction: column;
+    align-items: center;
+    height: 610px;
+    flex-basis: unset;
+}
+
+#image {
+    width: 340px;
+    height: 240px;
+    background-size: 100%;
+    background-position-y: -115px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0%;
+    flex-basis: 40%;
+}
+
+.text {
+    width: fit-content;
+    height: 327px;
+    line-height: 20px;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+.perfume {
+    font-size: 14px;
+}
+
+.button {
+    align-self: center;
+}
+
+button {
+    width: 290px;
+}
+
+.card{
+    width: 340px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0;
+    height: 370px;
+    flex-basis: 60%;
+}
+
+br {
+    display: block;
+}
+
+}
+
+@media (max-width: 350px){
+    
+    article {
+        height: 610px;
+    }
+
+    #image {
+        width: 310px;
+    }
+
+    .text {
+        width: fit-content;  
+    }
+    
+    button {
+        width: 265px;
+    }
+
+    .card{
+        width: 310px;
+        
+    }
+    
+    }
