@@ -54,4 +54,3 @@ article {
 
 ### Continued development
 I'd like to continue focusing on learning more about pseudo-selectors and animation in future projects. 
-
